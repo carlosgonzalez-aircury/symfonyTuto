@@ -27,7 +27,7 @@ class VinlylController extends AbstractController /*Por regla general no se nece
         /*dd($tracks);Esta función nos muestra las variables, y mata la carga de la página. Mostrandonos, si funciona, los datos de un objeto o lo que se quiera mostrar*/
         /*dump($tracks); Como la anterior pero mantiene "viva" la página.*/
 
-        $this->render('vinyl/homepage.html.twig',[
+        return $this->render('vinyl/homepage.html.twig',[
             /*Como segundo argumento se pasa una array de variables que queramos tener en la plantillas, estas variables seran llamadas en el ".html.twig" que creemos*/
 
             'title'=> 'PB &Jams',
